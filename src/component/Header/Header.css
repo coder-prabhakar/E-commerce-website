@@ -1,0 +1,67 @@
+.Header{
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 0 30px;
+}
+
+.webName p{
+    font-size: 30px;
+    font-weight: 600;
+    color: black;
+}
+
+.searchBar{
+    width: 600px;
+    height: 40px;
+    border: 2px solid #e9e9e9;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: 1fr 50px
+}
+
+.searchBar input{
+    height: 100%;
+    font-size: 17px;
+    color: #414141;
+    padding-left: 10px;
+}
+.searchBar input::placeholder { color: #8d8d8d; }
+
+.searchBar button{
+    background-color: #e9e9e9;
+    font-size: 20px;
+}
+.searchBar button:hover {
+    color: #00a2ff;
+}
+
+.header-icons{
+    display: flex;
+}
+
+.header-icons .icon{
+    margin-left: 20px;
+}
+
+.header-icons .icon i{
+    font-size: 30px;
+    color: #4b4b4b;
+}
+
+.header-icons .icon i:hover{
+    color: #00a2ff;
+}
+
+.header-icons .menu-btn, .header-icons .home-btn{ display: none; }
+
+.header-icons .cart-btn span, .header-icons .order-btn span {
+    background-color: red;
+    color: white;
+    font-size: 13px;
+    padding: 0 3px;
+    border-radius: 50%;
+    float: inline-end;
+}

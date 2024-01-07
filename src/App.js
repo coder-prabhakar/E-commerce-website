@@ -1,12 +1,12 @@
 import './App.css';
+import Header from "./component/Header/Header"
+// import Navbar from "./component/Navbar/Navbar"
 
 function App() {
   return (
     <div className="App">
-      <header>
-        <h1>E-commerce website</h1>
-        <p>It's a very big project</p>
-      </header>
+     <Header />
+     {/* <Navbar /> */}
     </div>
   );
 }

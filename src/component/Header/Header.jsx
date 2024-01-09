@@ -6,8 +6,9 @@ function Header() {
       <div className="webName">
         <p>Store</p>
       </div>
-      <div className="searchBar-container">
-        <span className="searchBar"><input type="text" placeholder="Enter your product name..." /><button><i class="uil uil-search"></i></button></span>
+      <div className="searchBar">
+        <input type="text" placeholder="Enter your product name..." />
+        <button><i class="uil uil-search"></i></button>
       </div>
       <div className="header-icons">
         <div className="menu-btn icon"><i class="uil uil-bars"></i></div>

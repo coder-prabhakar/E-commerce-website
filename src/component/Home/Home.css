@@ -1,0 +1,19 @@
+.home-img{
+    padding: 0 30px;
+}
+
+.home-img img{
+    width: 100%;
+    border-radius: 30px;
+}
+
+
+/* Media quries */
+@media (min-width:1060px){
+    .home-img{
+        padding: 0;
+    }
+    .home-img img{
+        width: 1000px;
+    }
+}

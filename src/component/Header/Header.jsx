@@ -1,6 +1,19 @@
 import "./Header.css"
+import {useState} from "react";
 
-function Header() {
+function Header({navbarActive}) {
+
+  const [menuBtn, menuBtnActive] = useState("uil uil-bars");
+
+  function menuBtnClicked(){
+    navbarActive();
+    if(menuBtn === "uil uil-bars"){
+      menuBtnActive("uil uil-times")
+    } else {
+      menuBtnActive("uil uil-bars")
+    }
+  }
+
   return (
     <div className='Header'>
       <div className="webName">
@@ -11,7 +24,7 @@ function Header() {
         <button><i class="uil uil-search"></i></button>
       </div>
       <div className="header-icons">
-        <div className="menu-btn icon"><i class="uil uil-bars"></i></div>
+        <div className="menu-btn icon" ><i class={menuBtn} onClick={menuBtnClicked}></i></div>
         <div className="home-btn icon"><i class="uil uil-estate"></i></div>
         <div className="cart-btn icon"><i class="uil uil-heart-alt"></i><span>3</span></div>
         <div className="order-btn icon"><i class="uil uil-shopping-bag"></i><span>0</span></div>

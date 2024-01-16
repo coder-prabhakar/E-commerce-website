@@ -61,8 +61,8 @@
 .header-icons .cart-btn span, .header-icons .order-btn span {
     background-color: red;
     color: white;
-    font-size: 13px;
-    padding: 0 3px;
+    font-size: 12px;
+    padding: 0 4px;
     border-radius: 50%;
     float: inline-end;
 }
@@ -70,6 +70,41 @@
 @media (max-width:1000px) {
     .Header{
         gap: 40px;
+    }
+}
+
+@media (max-width:860px){
+    .webName p{
+        font-size: 27px;
+    }
+
+    .searchBar{
+        height: 30px;
+        border-radius: 10px;
+        grid-template-columns: 1fr 40px;
+    }
+    
+    .searchBar input{
+        font-size: 15px;
+        padding-left: 7px;
+    }
+    
+    .searchBar button{
+        font-size: 18px;
+    }
+    
+    .header-icons .icon i{
+        font-size: 23px;
+        transition: .2s linear;
+    }
+
+    .uil-times{
+        transform: rotate(180deg); 
+    }
+
+    .header-icons .cart-btn span, .header-icons .order-btn span {
+        font-size: 10px;
+        padding: 0 4px;
     }
 }
 
@@ -85,25 +120,9 @@
         border: 1px solid #e9e9e9;
     }
 
-    .webName p{
-        font-size: 27px;
-    }
-
     .searchBar{
         width: 100%;
-        height: 30px;
         margin-bottom: 15px;
-        border-radius: 10px;
-        grid-template-columns: 1fr 40px;
-    }
-    
-    .searchBar input{
-        font-size: 15px;
-        padding-left: 7px;
-    }
-    
-    .searchBar button{
-        font-size: 18px;
     }
 
     .header-icons{
@@ -116,11 +135,9 @@
         left: 0;
         width: 100%;
         height: 60px;
-        box-shadow: 0 0 5px 5px #e0e0e0;
-    }
-
-    .header-icons .icon i{
-        font-size: 23px;
+        box-shadow: 0 0 5px 5px #eeeeee;
+        z-index: 100;
+        background-color: white;
     }
 
     .header-icons .menu-btn, .header-icons .home-btn{ display: inherit; }

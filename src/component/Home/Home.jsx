@@ -1,13 +1,13 @@
 import React from 'react'
+import "./Home.css"
+import img1 from "./../../img/img-second.png";
 
 function Home() {
   return (
     <div style={{textAlign:"center"}}>
-      <h1>Hellow</h1>
-      <h3>prabhakar kumar</h3>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias labore, eligendi voluptatibus ea unde a quae iste quasi esse impedit.</p>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias labore, eligendi voluptatibus ea unde a quae iste quasi esse impedit.</p>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias labore, eligendi voluptatibus ea unde a quae iste quasi esse impedit.</p>
+      <div className="home-img">
+        <img src={img1} alt="home-img" />
+      </div>
     </div>
   )
 }

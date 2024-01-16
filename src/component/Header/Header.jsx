@@ -1,6 +1,7 @@
 import "./Header.css"
 import {useState} from "react";
 
+
 function Header({navbarActive}) {
 
   const [menuBtn, menuBtnActive] = useState("uil uil-bars");
@@ -20,7 +21,7 @@ function Header({navbarActive}) {
         <p>Store</p>
       </div>
       <div className="searchBar">
-        <input type="text" placeholder="Enter your product name..." />
+        <input type="text" placeholder="Search..." />
         <button><i class="uil uil-search"></i></button>
       </div>
       <div className="header-icons">

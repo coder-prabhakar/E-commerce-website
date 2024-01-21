@@ -33,14 +33,7 @@
 }
 
 
-/* Media quries */
-@media (min-width:1060px){
-    .Navbar{
-        padding: 0;
-        width: 1000px;
-        margin: 0 auto;
-    }
-}
+/* Media Quries */
 
 @media (min-width:701px) and (max-width:860px) {
     .navItem > div:first-child > P{
@@ -53,9 +46,11 @@
 
 @media (min-width:701px){
     .Navbar{
-        padding: 0 30px;
+        width: 95vw;
         height: 50px;
-        justify-content: space-between;
+        padding: 0;
+        margin: 0 auto;
+        justify-content: space-around;
         align-items: flex-start;
     }
     
